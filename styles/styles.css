@@ -39,7 +39,7 @@ body {
         
     background-color: var(--bg-Darkdesaturatedblue);
      
-    width:min(80%,130vh);
+    width:min(80%,150vh);
   
 
     margin:5% 0;
@@ -62,7 +62,7 @@ body {
 
 .information h1 {
     font-weight: 700;
-    font-size: 3rem;
+    font-size: 2.5rem;
 
     margin-bottom: 3vh;
 }
