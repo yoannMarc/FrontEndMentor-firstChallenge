@@ -1,0 +1,172 @@
+:root{
+    /*### Primary*/
+    --bg-darkblue : hsl(233, 47%, 7%);
+    --bg-Darkdesaturatedblue : hsl(244, 38%, 16%);
+    --bg-Softviolet : hsl(277, 64%, 61%);
+    
+    /*### Neutral*/
+    --ftColor-White : hsl(0, 0%, 100%);
+    --ftColor-SlightlyTransparentWhite : hsla(0, 0%, 100%, 0.75);
+    --ftColor-MoreTransparentWhite : hsla(0, 0%, 100%, 0.6);
+
+    /* FONTS */
+    --ft-Inter : 'Inter', sans-serif;
+    --ft-Lexend : 'Lexend Deca', sans-serif;
+}
+
+
+
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+
+    color:var(--ftColor-White);
+    font-family: var(--ft-Inter)
+}
+
+body {
+    background-color:var(--bg-darkblue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+
+   
+}
+
+.container {
+        
+    background-color: var(--bg-Darkdesaturatedblue);
+     
+    width:min(80%,130vh);
+  
+
+    margin:5% 0;
+
+    display: flex;
+
+    
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+
+
+
+.information {
+    padding:12%;
+    
+    
+}
+
+.information h1 {
+    font-weight: 700;
+    font-size: 3rem;
+
+    margin-bottom: 3vh;
+}
+
+.information p {
+    line-height: 1.75rem;
+    font-size: 1.15rem;
+
+    color:var(--ftColor-SlightlyTransparentWhite)
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    padding:0 13%;
+}
+
+.companies{
+    margin:auto;
+    margin-bottom: 13%;
+    
+}
+
+.companies h2 {
+   font-size:2rem;
+   font-weight: 700;
+}
+
+.companies p {
+    text-transform: uppercase;
+    font-family: var(--ft-Lexend);
+    color:var(--ftColor-MoreTransparentWhite);
+}
+
+.imgtest{
+    background-image: url("../images/image-header-desktop.jpg");
+    background-color: var(--bg-Softviolet);
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+
+ 
+
+    width: 80%;
+    height: auto;
+  
+}
+
+
+/* UTILITIES */
+
+.firstItem {
+    margin-left:0;
+}
+
+.lastItem {
+    margin-right:0;
+}
+
+
+.colorSoftViolet {
+    color: var(--bg-Softviolet)
+}
+
+
+
+
+@media screen and (max-width:1410px) {
+
+  .container{
+      flex-direction: column-reverse;
+      text-align: center;
+  }
+
+  .imgtest{
+    background-image: url("../images/image-header-mobile.jpg");
+    height: 26vh;
+    width: auto;
+  }
+
+  .information{
+    padding: 0 5%;  
+    padding-top:10%;
+    padding-bottom: 5%;
+  }
+  .information h1 {
+      font-size: 1.8rem;
+  }
+
+  .information p {
+      font-size: 1rem;
+  }
+
+  .footer {
+      flex-direction: column;
+      margin-bottom: 5%;
+  }
+
+  .companies {
+      margin:8% 0;
+      
+  }
+
+}
+
+
